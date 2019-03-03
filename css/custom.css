@@ -191,6 +191,10 @@ body {
   padding-top: 32px;
   padding-bottom: 48px;
 }
+.site-link-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 #site-links a {
   text-decoration: none;
   color: white;
