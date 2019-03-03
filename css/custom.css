@@ -25,6 +25,10 @@ body {
   height: 88px;
 }
 
+.mobile-title {
+  text-align: center;
+}
+
 .moving-title {
   top: 64px;
  height: 100px;  
@@ -186,6 +190,10 @@ body {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 48px;
+}
+#site-links a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Larger than tablet */
@@ -356,4 +364,19 @@ body {
 
 .hide {
   display: none;
+}
+
+/*Media Queries*/
+
+.only-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .no-mobile {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
+  }
 }
