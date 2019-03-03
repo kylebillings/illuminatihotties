@@ -4,6 +4,27 @@ body {
   color: white;
 }
 
+.img-responsive {
+  width: 100%;
+}
+
+/*Navbar*/
+
+#navbar {
+  width: 100%;
+  height: 56px;
+}
+
+.navbar-item {
+  float: right;
+}
+
+.moving-title--spacing {
+  display: block;
+  width: 100%;
+  height: 88px;
+}
+
 .moving-title {
   top: 64px;
  height: 100px;  
@@ -26,23 +47,23 @@ body {
 }
 /* Move it (define the animation) */
 @-moz-keyframes moving-title {
- 0%   { -moz-transform: translateX(70%); }
- 100% { -moz-transform: translateX(0%); }
+ 0%   { -moz-transform: translateX(35%); }
+ 100% { -moz-transform: translateX(15%); }
 }
 @-webkit-keyframes moving-title {
- 0%   { -webkit-transform: translateX(70%); }
- 100% { -webkit-transform: translateX(0%); }
+ 0%   { -webkit-transform: translateX(35%); }
+ 100% { -webkit-transform: translateX(15%); }
 }
 @keyframes moving-title {
  0%   { 
- -moz-transform: translateX(70%); /* Firefox bug fix */
- -webkit-transform: translateX(70%); /* Firefox bug fix */
- transform: translateX(70%);    
+ -moz-transform: translateX(35%); /* Firefox bug fix */
+ -webkit-transform: translateX(35%); /* Firefox bug fix */
+ transform: translateX(35%);    
  }
  100% { 
- -moz-transform: translateX(0%); /* Firefox bug fix */
- -webkit-transform: translateX(0%); /* Firefox bug fix */
- transform: translateX(0%); 
+ -moz-transform: translateX(15%); /* Firefox bug fix */
+ -webkit-transform: translateX(15%); /* Firefox bug fix */
+ transform: translateX(15%); 
  }
 }
 
@@ -161,6 +182,12 @@ body {
     max-height: none; }
 }
 
+#site-links {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   /* Navbar */
@@ -274,4 +301,59 @@ body {
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
+}
+
+/*Audio Player*/
+.outer {
+  display: table;
+  height: 100%;
+  float: right;
+  margin-right: 24px;
+}
+
+.tcell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapf {
+  position: relative;
+  width: 124px;
+  height: 124px;
+  cursor: pointer;
+  background: none;
+  border-radius: 50%;
+}
+
+.wrapf .play,
+.wrapf .pause {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.play {
+  background: none;
+  border-radius: 50%;
+}
+
+.play path {
+  fill: #fff;
+}
+
+.pause {
+  background: none;
+  border-radius: 50%;
+}
+
+.pause path {
+  fill: #fff;
+  background: blue;
+}
+
+.hide {
+  display: none;
 }
